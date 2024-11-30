@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Medication Tracker</h1>
+    <h2>Post Surgery Medication</h2>
+
+    <section>
+        <h3>Daily Medication</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Medication</th>
+                    <th>Dosage</th>
+                    <th data-day="sat">Sat</th>
+                    <th data-day="sun">Sun</th>
+                    <th data-day="mon">Mon</th>
+                    <th data-day="tue">Tue</th>
+                    <th data-day="wed">Wed</th>
+                    <th data-day="thu">Thu</th>
+                    <th data-day="fri">Fri</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="synthroid-row">
+                    <td>Synthroid</td>
+                    <td>One tablet daily<br>Best taken 30 minutes before breakfast</td>
+                    <td data-day="sat"></td>
+                    <td data-day="sun"></td>
+                    <td data-day="mon"></td>
+                    <td data-day="tue"></td>
+                    <td data-day="wed"></td>
+                    <td data-day="thu"></td>
+                    <td data-day="fri"></td>
+                </tr>
+                <tr id="myloc-row">
+                    <td>Myloc CR</td>
+                    <td>Take in morning<br>Swallow whole do not crush or chew</td>
+                    <td data-day="sat"></td>
+                    <td data-day="sun"></td>
+                    <td data-day="mon"></td>
+                    <td data-day="tue"></td>
+                    <td data-day="wed"></td>
+                    <td data-day="thu"></td>
+                    <td data-day="fri"></td>
+                </tr>
+                <tr id="pamol-row">
+                    <td>Pamol</td>
+                    <td>4 Doses per day at 20ml per dose</td>
+                    <td data-day="sat"></td>
+                    <td data-day="sun"></td>
+                    <td data-day="mon"></td>
+                    <td data-day="tue"></td>
+                    <td data-day="wed"></td>
+                    <td data-day="thu"></td>
+                    <td data-day="fri"></td>
+                </tr>
+                <tr id="ibuprofen-row">
+                    <td>Ibuprofen</td>
+                    <td>3 Doses per day at 20ml per dose</td>
+                    <td data-day="sat"></td>
+                    <td data-day="sun"></td>
+                    <td data-day="mon"></td>
+                    <td data-day="tue"></td>
+                    <td data-day="wed"></td>
+                    <td data-day="thu"></td>
+                    <td data-day="fri"></td>
+                </tr>
+                <tr id="clindamycin-row">
+                    <td>Clindamycin<br>(Antibiotic)</td>
+                    <td>2 capsules every 8 hours</td>
+                    <td data-day="sat"></td>
+                    <td data-day="sun"></td>
+                    <td data-day="mon"></td>
+                    <td data-day="tue"></td>
+                    <td data-day="wed"></td>
+                    <td data-day="thu"></td>
+                    <td data-day="fri"></td>
+                </tr>
+                <tr id="amitriptyline-row">
+                    <td>Amitriptyline</td>
+                    <td>Two tablets once daily at night</td>
+                    <td data-day="sat"></td>
+                    <td data-day="sun"></td>
+                    <td data-day="mon"></td>
+                    <td data-day="tue"></td>
+                    <td data-day="wed"></td>
+                    <td data-day="thu"></td>
+                    <td data-day="fri"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h4>Protien Intake</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Protien Source</th>
+                    <th>Number of Servings</th>
+                    <th data-day="sat">Sat</th>
+                    <th data-day="sun">Sun</th>
+                    <th data-day="mon">Mon</th>
+                    <th data-day="tue">Tue</th>
+                    <th data-day="wed">Wed</th>
+                    <th data-day="thu">Thu</th>
+                    <th data-day="fri">Fri</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="ensure-row">
+                    <td>Ensure</td>
+                    <td>6 to 8 shakes per day<br>Every 2-3 hours</td>
+                    <td data-day="sat"></td>
+                    <td data-day="sun"></td>
+                    <td data-day="mon"></td>
+                    <td data-day="tue"></td>
+                    <td data-day="wed"></td>
+                    <td data-day="thu"></td>
+                    <td data-day="fri"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3>Adhoc Medication</h3>
+        <h4>Pain</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Medication</th>
+                    <th>Dosage</th>
+                    <th data-day="sat">Sat</th>
+                    <th data-day="sun">Sun</th>
+                    <th data-day="mon">Mon</th>
+                    <th data-day="tue">Tue</th>
+                    <th data-day="wed">Wed</th>
+                    <th data-day="thu">Thu</th>
+                    <th data-day="fri">Fri</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="oxycodone-row">
+                    <td>Oxycodone</td>
+                    <td>When required for pain<br>Max 2.5ml every 4 hours</td>
+                    <td data-day="sat"></td>
+                    <td data-day="sun"></td>
+                    <td data-day="mon"></td>
+                    <td data-day="tue"></td>
+                    <td data-day="wed"></td>
+                    <td data-day="thu"></td>
+                    <td data-day="fri"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>Nausea</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Medication</th>
+                    <th>Dosage</th>
+                    <th data-day="sat">Sat</th>
+                    <th data-day="sun">Sun</th>
+                    <th data-day="mon">Mon</th>
+                    <th data-day="tue">Tue</th>
+                    <th data-day="wed">Wed</th>
+                    <th data-day="thu">Thu</th>
+                    <th data-day="fri">Fri</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="ondansetron-row">
+                    <td>Ondansetron</td>
+                    <td>When required for nausea<br>Allow to soften for a few seconds, then swallow</td>
+                    <td data-day="sat"></td>
+                    <td data-day="sun"></td>
+                    <td data-day="mon"></td>
+                    <td data-day="tue"></td>
+                    <td data-day="wed"></td>
+                    <td data-day="thu"></td>
+                    <td data-day="fri"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>Sleep</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Medication</th>
+                    <th>Dosage</th>
+                    <th data-day="sat">Sat</th>
+                    <th data-day="sun">Sun</th>
+                    <th data-day="mon">Mon</th>
+                    <th data-day="tue">Tue</th>
+                    <th data-day="wed">Wed</th>
+                    <th data-day="thu">Thu</th>
+                    <th data-day="fri">Fri</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="zopiclone-row">
+                    <td>Zopiclone</td>
+                    <td>1 tablet 30 minutes before bedtime</td>
+                    <td data-day="sat"></td>
+                    <td data-day="sun"></td>
+                    <td data-day="mon"></td>
+                    <td data-day="tue"></td>
+                    <td data-day="wed"></td>
+                    <td data-day="thu"></td>
+                    <td data-day="fri"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script type="module" src="medication-tracker.js"></script>
+</body>
+
+</html>

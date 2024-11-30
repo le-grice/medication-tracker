@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* Section Styles*/
+section {
+    margin: 10px;
+    margin-top: 40px;
+}
+
+/* Header Styles */
+h1, h2, h3, h4 {
+    text-align: center;
+    color: #333;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    table-layout: fixed;
+}
+
+tr, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Column widths */
+td:nth-child(1), th:nth-child(1) { width: 15%; }
+td:nth-child(2), th:nth-child(2) { width: 20%; }
+td:nth-child(n+3), th:nth-child(n+3) { width: auto; }
+
+/* Checkbox and Label Styles */
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    min-height: 24px;
+    margin: 4px 0;
+    min-width: 20px;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+.checkbox-label {
+    font-size: 0.8em;
+    color: #333;
+    margin-left: 4px;
+    white-space: nowrap;
+}
+
+.checkbox-wrapper:not(:has(label)) {
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.checkbox-wrapper:has(.time-input) {
+    gap: 4px;
+}
+
+/* Time Input Styles */
+.time-input {
+    width: 85px;
+    margin-left: 4px;
+    padding: 2px;
+    font-size: 0.9em;
+}
+
+/* Day Container Styles */
+.day-doses {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+/* Current/Past Day Styles */
+[data-day].current-day {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+[data-day].past-day {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Hide Clindamycin row */
+#clindamycin-row {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+    
+    th, td {
+        padding: 6px;
+    }
+
+    .checkbox-label {
+        font-size: 10px;
+    }
+
+    .checkbox {
+        width: 14px;
+        height: 14px;
+    }
+
+    .time-input {
+        width: 70px;
+        font-size: 0.8em;
+    }
+}
